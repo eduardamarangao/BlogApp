@@ -5,10 +5,14 @@
     const app = express();
     //const mongoose = require ('mongoose');
 // Configurações
-
-
-
+    // Body Parser
+    app.use(express.urlencoded({extended: true}));
+    app.use(express.json());
+    // Handlebars
+        app.engine('handlebars', handlebars.engine({defaultLayout: 'main'}));
+        app.set('view engine', 'handlebars');
 // Rotas
+
 
 
 // Outros
