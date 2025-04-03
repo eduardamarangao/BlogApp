@@ -13,8 +13,6 @@
         app.set('view engine', 'handlebars');
 // Rotas
 
-
-
 // Outros
 const PORT = 8081;
 app.listen(PORT, () => {
