@@ -13,4 +13,8 @@ router.get("/categorias", (req, res) => {
     res.send('página de categorias.')
 })
 
+router.get('teste', (req, res) => {
+    res.send('isso é um teste.')
+})
+
 module.exports = router;
