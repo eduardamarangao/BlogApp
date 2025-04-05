@@ -13,7 +13,7 @@
         app.engine('handlebars', handlebars.engine({defaultLayout: 'main'}));
         app.set('view engine', 'handlebars');
 // Rotas
-    app.use('/admin', admin);   
+    app.use('/umacoisaqualquer', admin);   
 // Outros
 const PORT = 8081;
 app.listen(PORT, () => {
