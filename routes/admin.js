@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 router.get("/", (req, res) => {
-    res.send('página principal do painel adm')
+    res.send('página principal do painel ADM.')
 })
 
 router.get("/posts", (req, res) => {
@@ -10,7 +10,7 @@ router.get("/posts", (req, res) => {
 })
 
 router.get("/categorias", (req, res) => {
-    res.send('Página de categorias.')
+    res.send('página de categorias.')
 })
 
 module.exports = router;
