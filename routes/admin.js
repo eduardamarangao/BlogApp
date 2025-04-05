@@ -6,7 +6,7 @@ router.get("/", (req, res) => {
 })
 
 router.get("/posts", (req, res) => {
-    res.send('Página de posts')
+    res.send('página de posts.')
 })
 
 router.get("/categorias", (req, res) => {
