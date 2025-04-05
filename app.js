@@ -4,6 +4,7 @@
     const bodyParser = require ('body-parser');
     const app = express();
     const admin = require ('./routes/admin');
+    const path = require ('path');
     //const mongoose = require ('mongoose');
 // Configurações
     // Body Parser
@@ -13,6 +14,15 @@
         app.engine('handlebars', handlebars.engine({defaultLayout: 'main'}));
         app.set('view engine', 'handlebars');
 // Rotas
+
+    app.get('/', (req, res) => {    
+        res.send('página inicial.');
+    });
+
+    app.get('/posts', (req, res) => {
+        res.send('lista de posts.');
+    });
+
     app.use('/admin', admin);   
 // Outros
 const PORT = 8081;
