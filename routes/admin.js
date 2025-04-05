@@ -10,7 +10,7 @@ router.get("/posts", (req, res) => {
 })
 
 router.get("/categorias", (req, res) => {
-    res.send('Página de categorias')
+    res.send('Página de categorias.')
 })
 
 module.exports = router;
