@@ -13,8 +13,11 @@
     // Handlebars
         app.engine('handlebars', handlebars.engine({defaultLayout: 'main'}));
         app.set('view engine', 'handlebars');
-// Rotas
+//Mongoose
+    // Em breve
+//Public 
 
+// Rotas
     app.get('/', (req, res) => {    
         res.send('página inicial.');
     });
