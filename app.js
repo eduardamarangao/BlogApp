@@ -16,7 +16,7 @@
 //Mongoose
     // Em breve
 //Public 
-
+    app.use(express.static(path.join(__dirname, 'public')))
 // Rotas
     app.get('/', (req, res) => {    
         res.send('página inicial.');
