@@ -17,9 +17,12 @@
     // Em breve
 //Public 
     app.use(express.static(path.join(__dirname, 'public')))
+
+// Configuração do diretório de views
+    app.set('views', path.join(__dirname, 'views'));
 // Rotas
     app.get('/', (req, res) => {    
-        res.render("admin/index")
+        res.render("admin/index.handlebars")
     });
 
     app.get('/posts', (req, res) => {
