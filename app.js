@@ -20,8 +20,12 @@
 
 
 // Rotas
-    app.get('/', (req, res) => {    
-        res.render("admin/index.handlebars")
+    app.get('/', (req, res) => {
+        res.send('Página inicial.');
+    });
+
+    app.get('/admin', (req, res) => {    
+        res.render("admin/index")
     });
 
     app.get('/posts', (req, res) => {

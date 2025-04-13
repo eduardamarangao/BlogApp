@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 router.get("/", (req, res) => {
-    res.send('página principal do painel ADM.')
+    res.send('página inicial do admin.')
 })
 
 router.get("/posts", (req, res) => {
