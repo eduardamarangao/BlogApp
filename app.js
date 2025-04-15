@@ -15,6 +15,7 @@
     app.engine("handlebars", handlebars.engine({ defaultLayout: "main" }));
     app.set("view engine", "handlebars");
 //Mongoose
+    mongoose.Promise = global.Promise;
     mongoose
     .connect("mongodb://localhost/blogapp")
     .then(() => {
